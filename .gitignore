@@ -1,0 +1,49 @@
+# ============================================
+# Android 构建文件
+# ============================================
+# 所有 build 目录
+**/build/
+**/app/build/
+**/.gradle/
+**/local.properties
+
+# Android Studio 文件
+**/.idea/
+**/*.iml
+.idea/
+*.iml
+
+# ============================================
+# Flutter 构建文件
+# ============================================
+# Flutter 构建产物
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.flutter-plugins-dependencies.json
+
+# Flutter 生成的 Android 文件
+**/.android/
+flutter_demo/android/
+flutter_module_demo/.android/
+
+# ============================================
+# 通用忽略文件
+# ============================================
+.DS_Store
+*.swp
+*.swo
+*~
+*.log
+*.tmp
+*.bak
+
+# 系统文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# 编辑器文件
+.vscode/
+*.code-workspace
