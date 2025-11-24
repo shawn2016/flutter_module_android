@@ -5,7 +5,10 @@
 
 AAR_SOURCE_DIR="../flutter_module_demo/build/host/outputs/repo/com/example/flutter_module_demo"
 LIBS_DIR="app/libs"
-
+# 运行fcd ../flutter_module_demo && flutter build aar
+echo "开始构建 Flutter Module AAR..."
+cd ../flutter_module_demo && flutter build aar
+echo "构建完成"
 echo "开始复制 Flutter AAR 文件..."
 
 # 检查源目录是否存在

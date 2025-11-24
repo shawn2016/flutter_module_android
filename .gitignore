@@ -47,3 +47,6 @@ Desktop.ini
 # 编辑器文件
 .vscode/
 *.code-workspace
+flutter_module_demo/app/libs/flutter_debug.aar
+flutter_module_demo/app/libs/flutter_profile.aar
+flutter_module_demo/app/libs/flutter_release.aar
