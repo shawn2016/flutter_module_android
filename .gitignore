@@ -50,3 +50,6 @@ Desktop.ini
 flutter_module_demo/app/libs/flutter_debug.aar
 flutter_module_demo/app/libs/flutter_profile.aar
 flutter_module_demo/app/libs/flutter_release.aar
+android_simple/app/libs/flutter_debug.aar
+android_simple/app/libs/flutter_profile.aar
+android_simple/app/libs/flutter_release.aar
