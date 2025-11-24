@@ -22,6 +22,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            minifyEnabled false
+        }
+        profile {
+            initWith debug
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -37,6 +43,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // Flutter Module依赖 - 使用Maven本地仓库（可以正确解析AAR的依赖）
+    debugImplementation 'com.example.flutter_module_demo:flutter_debug:1.0'
+    profileImplementation 'com.example.flutter_module_demo:flutter_profile:1.0'
+    releaseImplementation 'com.example.flutter_module_demo:flutter_release:1.0'
+    
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

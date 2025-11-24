@@ -10,6 +10,15 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // Flutter Module的Maven本地仓库（包含AAR文件和依赖信息）
+        maven {
+            url '../flutter_module_demo/build/host/outputs/repo'
+        }
+        // Flutter引擎仓库（AAR文件需要Flutter引擎依赖）
+        maven {
+            String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
+            url "$storageUrl/download.flutter.io"
+        }
     }
 }
 
