@@ -8,9 +8,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$SCRIPT_DIR"
 
 # 定义路径（基于脚本所在目录）
-AAR_SOURCE_DIR="$PROJECT_ROOT/../flutter_module_demo/build/host/outputs/repo/com/example/flutter_module_demo"
+AAR_SOURCE_DIR="$PROJECT_ROOT/../../rs-booking/build/host/outputs/repo/ai/restosuite/inc/tables"
 LIBS_DIR="$PROJECT_ROOT/app/libs"
-FLUTTER_MODULE_DIR="$PROJECT_ROOT/../flutter_module_demo"
+FLUTTER_MODULE_DIR="$PROJECT_ROOT/../../rs-booking"
 
 echo "脚本目录: $SCRIPT_DIR"
 echo "开始构建 Flutter Module AAR..."
@@ -34,7 +34,7 @@ echo "开始复制 Flutter AAR 文件..."
 if [ ! -d "$AAR_SOURCE_DIR" ]; then
     echo "错误: Flutter Module AAR 文件不存在"
     echo "请检查路径: $AAR_SOURCE_DIR"
-    echo "请先运行: cd ../flutter_module_demo && flutter build aar"
+    echo "请先运行: cd ../../rs-booking && flutter build aar"
     exit 1
 fi
 

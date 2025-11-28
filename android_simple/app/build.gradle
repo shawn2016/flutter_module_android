@@ -45,9 +45,15 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     
     // Flutter Module依赖 - 使用Maven本地仓库（可以正确解析AAR的依赖）
-    debugImplementation 'com.example.flutter_module_demo:flutter_debug:1.0'
-    profileImplementation 'com.example.flutter_module_demo:flutter_profile:1.0'
-    releaseImplementation 'com.example.flutter_module_demo:flutter_release:1.0'
+    debugImplementation('ai.restosuite.inc.tables:flutter_debug:1.0') {
+        exclude group: 'com.example.r_upgrade', module: 'r_upgrade_lib'
+    }
+    profileImplementation('ai.restosuite.inc.tables:flutter_profile:1.0') {
+        exclude group: 'com.example.r_upgrade', module: 'r_upgrade_lib'
+    }
+    releaseImplementation('ai.restosuite.inc.tables:flutter_release:1.0') {
+        exclude group: 'com.example.r_upgrade', module: 'r_upgrade_lib'
+    }
     
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
