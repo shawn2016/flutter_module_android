@@ -2,9 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>com.apple.security.app-sandbox</key>
-    <true/>
-    <key>com.apple.security.files.user-selected.read-only</key>
-    <true/>
+	<!-- iOS 应用不需要 app-sandbox，这是 macOS 的设置 -->
+	<!-- 如果需要特定权限，可以在这里添加，例如：
+	<key>com.apple.developer.associated-domains</key>
+	<array>
+		<string>applinks:example.com</string>
+	</array>
+	-->
 </dict>
 </plist>

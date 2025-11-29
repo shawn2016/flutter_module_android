@@ -1,0 +1,95 @@
+PODS:
+  - device_info_plus (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - flutter_keyboard_visibility (0.0.1):
+    - Flutter
+  - flutter_native_splash (2.4.3):
+    - Flutter
+  - flutter_timezone (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - device_info_plus
+    - Flutter
+    - flutter_keyboard_visibility
+    - flutter_native_splash
+    - flutter_timezone
+    - package_info_plus
+    - path_provider_foundation
+    - r_upgrade
+    - sqflite_darwin
+    - url_launcher_ios
+    - webview_flutter_wkwebview
+  - package_info_plus (0.4.5):
+    - Flutter
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - r_upgrade (0.0.1):
+    - Flutter
+  - sqflite_darwin (0.0.4):
+    - Flutter
+    - FlutterMacOS
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - webview_flutter_wkwebview (0.0.1):
+    - Flutter
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - device_info_plus (from `../../rs-booking/.ios/.symlinks/plugins/device_info_plus/ios`)
+  - Flutter (from `../../rs-booking/.ios/Flutter`)
+  - flutter_keyboard_visibility (from `../../rs-booking/.ios/.symlinks/plugins/flutter_keyboard_visibility/ios`)
+  - flutter_native_splash (from `../../rs-booking/.ios/.symlinks/plugins/flutter_native_splash/ios`)
+  - flutter_timezone (from `../../rs-booking/.ios/.symlinks/plugins/flutter_timezone/ios`)
+  - FlutterPluginRegistrant (from `../../rs-booking/.ios/Flutter/FlutterPluginRegistrant`)
+  - package_info_plus (from `../../rs-booking/.ios/.symlinks/plugins/package_info_plus/ios`)
+  - path_provider_foundation (from `../../rs-booking/.ios/.symlinks/plugins/path_provider_foundation/darwin`)
+  - r_upgrade (from `../../rs-booking/.ios/.symlinks/plugins/r_upgrade/ios`)
+  - sqflite_darwin (from `../../rs-booking/.ios/.symlinks/plugins/sqflite_darwin/darwin`)
+  - url_launcher_ios (from `../../rs-booking/.ios/.symlinks/plugins/url_launcher_ios/ios`)
+  - webview_flutter_wkwebview (from `../../rs-booking/.ios/.symlinks/plugins/webview_flutter_wkwebview/darwin`)
+
+EXTERNAL SOURCES:
+  device_info_plus:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/device_info_plus/ios"
+  Flutter:
+    :path: "../../rs-booking/.ios/Flutter"
+  flutter_keyboard_visibility:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/flutter_keyboard_visibility/ios"
+  flutter_native_splash:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/flutter_native_splash/ios"
+  flutter_timezone:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/flutter_timezone/ios"
+  FlutterPluginRegistrant:
+    :path: "../../rs-booking/.ios/Flutter/FlutterPluginRegistrant"
+  package_info_plus:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/package_info_plus/ios"
+  path_provider_foundation:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/path_provider_foundation/darwin"
+  r_upgrade:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/r_upgrade/ios"
+  sqflite_darwin:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/sqflite_darwin/darwin"
+  url_launcher_ios:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/url_launcher_ios/ios"
+  webview_flutter_wkwebview:
+    :path: "../../rs-booking/.ios/.symlinks/plugins/webview_flutter_wkwebview/darwin"
+
+SPEC CHECKSUMS:
+  device_info_plus: bf2e3232933866d73fe290f2942f2156cdd10342
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_keyboard_visibility: 0339d06371254c3eb25eeb90ba8d17dca8f9c069
+  flutter_native_splash: f71420956eb811e6d310720fee915f1d42852e7a
+  flutter_timezone: ac3da59ac941ff1c98a2e1f0293420e020120282
+  FlutterPluginRegistrant: 258e5cd2f72602739560a7e4e357f77d6327c279
+  package_info_plus: c0502532a26c7662a62a356cebe2692ec5fe4ec4
+  path_provider_foundation: 2b6b4c569c0fb62ec74538f866245ac84301af46
+  r_upgrade: 44d715c61914cce3d01ea225abffe894fd51c114
+  sqflite_darwin: 5a7236e3b501866c1c9befc6771dfd73ffb8702d
+  url_launcher_ios: 5334b05cef931de560670eeae103fd3e431ac3fe
+  webview_flutter_wkwebview: a4af96a051138e28e29f60101d094683b9f82188
+
+PODFILE CHECKSUM: 6101891dfd2072d09828b45d198d4a61f03a78dd
+
+COCOAPODS: 1.16.2

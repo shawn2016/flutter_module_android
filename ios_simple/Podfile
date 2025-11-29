@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+target 'ios_simple' do
+  use_frameworks!
+
+  # Flutter Module 路径（使用 .ios 模块，类似 Android 直接引用源码）
+  flutter_application_path = '../../rs-booking'
+  load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+  
+  # 安装 Flutter 模块
+  install_all_flutter_pods(flutter_application_path)
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    flutter_additional_ios_build_settings(target)
+  end
+  flutter_post_install(installer)
+end

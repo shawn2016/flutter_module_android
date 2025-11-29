@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct ios_simpleApp: App {
+    // 使用 UIApplicationDelegateAdaptor 连接 AppDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             MainTabView()
