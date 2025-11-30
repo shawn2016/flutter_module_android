@@ -139,6 +139,7 @@
 				2974E9B92EDAE0D500C9096D /* Resources */,
 				C09D2FF83F8B2DDECEB0D6F8 /* [CP] Embed Pods Frameworks */,
 				6D45C21FDCAEF29077EED5C7 /* [CP-User] Embed Flutter Build rs_booking Script */,
+				0F572DAFF9A2E6BD33E7B13C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +264,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0F572DAFF9A2E6BD33E7B13C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_simple/Pods-ios_simple-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_simple/Pods-ios_simple-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios_simple/Pods-ios_simple-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		18276AB500096D2899AC4FB0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
