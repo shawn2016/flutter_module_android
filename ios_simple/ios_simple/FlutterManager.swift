@@ -59,6 +59,16 @@ class FlutterManager {
             bundle: nil
         )
         
+        // ⭐ 隐藏导航栏（与 Android 保持一致）
+        flutterViewController.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        // ⭐ 覆盖安全区域，真正全屏显示（包括状态栏）
+        if #available(iOS 11.0, *) {
+            flutterViewController.view.insetsLayoutMarginsFromSafeArea = false
+        }
+        flutterViewController.edgesForExtendedLayout = .all
+        flutterViewController.extendedLayoutIncludesOpaqueBars = true
+        
         // 设置初始路由（如果提供）
         if let route = initialRoute {
             flutterViewController.setInitialRoute(route)

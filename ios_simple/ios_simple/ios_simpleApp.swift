@@ -15,6 +15,8 @@ struct ios_simpleApp: App {
     var body: some Scene {
         WindowGroup {
             MainTabView()
+                // ⭐ 隐藏状态栏（可选，如果需要完全全屏）
+                // .statusBar(hidden: true)
         }
     }
 }

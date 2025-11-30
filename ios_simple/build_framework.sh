@@ -43,22 +43,27 @@ case $BUILD_TYPE in
 esac
 
 # 检查 Framework 是否构建成功
-if [ -d "$FRAMEWORK_DIR/Flutter.framework" ]; then
+# 注意：flutter build ios-framework 生成的是 .xcframework 文件
+if [ -d "$FRAMEWORK_DIR/App.xcframework" ] || [ -d "$FRAMEWORK_DIR/Flutter.xcframework" ]; then
     echo ""
     echo "✅ Framework 构建成功！"
     echo ""
     echo "Framework 位置:"
-    echo "  $FLUTTER_MODULE_DIR/$FRAMEWORK_DIR/Flutter.framework"
+    echo "  $FLUTTER_MODULE_DIR/$FRAMEWORK_DIR/"
     echo ""
-    echo "文件大小:"
-    du -sh "$FRAMEWORK_DIR/Flutter.framework"
+    echo "生成的 Framework 文件："
+    find "$FRAMEWORK_DIR" -name "*.xcframework" -type d 2>/dev/null | while read framework; do
+        echo "  - $framework"
+        du -sh "$framework" 2>/dev/null | awk '{print "    大小: " $1}'
+    done
     echo ""
     echo "下一步："
-    echo "1. 运行 pod install 更新依赖"
-    echo "2. 在 Xcode 中重新构建项目"
+    echo "1. 如果使用 Framework 方式，在 Xcode 中手动添加 Framework"
+    echo "2. 如果使用 CocoaPods 方式，运行 pod install 更新依赖"
     echo ""
 else
-    echo "❌ Framework 构建失败"
+    echo "❌ Framework 构建失败，未找到 Framework 文件"
+    echo "检查目录: $FRAMEWORK_DIR"
     exit 1
 fi
 

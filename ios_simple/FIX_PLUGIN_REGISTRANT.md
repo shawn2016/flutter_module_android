@@ -53,3 +53,4 @@ flutter_post_install(installer)
 
 如果基本功能可用，说明修复成功。如果需要使用插件，再解决插件注册问题。
 
+
