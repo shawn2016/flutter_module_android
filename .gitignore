@@ -53,3 +53,22 @@ flutter_module_demo/app/libs/flutter_release.aar
 android_simple/app/libs/flutter_debug.aar
 android_simple/app/libs/flutter_profile.aar
 android_simple/app/libs/flutter_release.aar
+
+# ============================================
+# iOS 构建文件
+# ============================================
+# CocoaPods
+ios_simple/Pods/
+ios_simple/Podfile.lock
+**/Pods/
+**/Podfile.lock
+
+# Xcode
+**/*.xcworkspace
+!**/*.xcworkspace/contents.xcworkspacedata
+**/*.xcodeproj/*
+!**/*.xcodeproj/project.pbxproj
+!**/*.xcodeproj/xcshareddata/
+**/*.xcodeproj/xcuserdata/
+**/*.xcuserstate
+**/*.xcuserdatad/

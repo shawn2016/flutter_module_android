@@ -1,6 +1,0 @@
-framework module Pods_ios_simple {
-  umbrella header "Pods-ios_simple-umbrella.h"
-
-  export *
-  module * { export * }
-}
