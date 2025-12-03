@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.simple.app'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.simple.app"
         minSdk 24
-        targetSdk 34
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -46,13 +46,17 @@ dependencies {
     
     // Flutter Module依赖 - 使用Maven本地仓库（可以正确解析AAR的依赖）
     debugImplementation('ai.restosuite.inc.tables:flutter_debug:1.0') {
-        exclude group: 'com.example.r_upgrade', module: 'r_upgrade_lib'
+        // 排除有问题的依赖
+        exclude group: 'com.example.r_upgrade'
+        exclude group: 'com.github.iminsoftware', module: 'IminPrinterLibrary'
     }
     profileImplementation('ai.restosuite.inc.tables:flutter_profile:1.0') {
-        exclude group: 'com.example.r_upgrade', module: 'r_upgrade_lib'
+        exclude group: 'com.example.r_upgrade'
+        exclude group: 'com.github.iminsoftware', module: 'IminPrinterLibrary'
     }
     releaseImplementation('ai.restosuite.inc.tables:flutter_release:1.0') {
-        exclude group: 'com.example.r_upgrade', module: 'r_upgrade_lib'
+        exclude group: 'com.example.r_upgrade'
+        exclude group: 'com.github.iminsoftware', module: 'IminPrinterLibrary'
     }
     
     testImplementation 'junit:junit:4.13.2'

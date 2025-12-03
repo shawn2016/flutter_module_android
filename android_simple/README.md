@@ -50,3 +50,16 @@ android_simple/
 - Material Design Components
 - ConstraintLayout
 
+
+安卓
+
+进入到cd android_simple
+sh copy_aar.sh
+sh install_to_device.sh
+
+ios
+
+将convert_to_module_rsbooking.sh复制到rs-booking
+执行完sh convert_to_module_rsbooking.sh后 
+到cd ios_simple
+sh build_framework.sh

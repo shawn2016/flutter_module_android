@@ -32,10 +32,16 @@ echo ""
 # 进入项目目录
 cd "$PROJECT_DIR"
 
-# 检查 gradlew
+# 检查 gradlew，如果不存在则生成
 if [ ! -f "gradlew" ]; then
-    echo "❌ 错误: gradlew 不存在"
-    exit 1
+    echo "⚠️  gradlew 不存在，正在生成..."
+    if command -v gradle &> /dev/null; then
+        gradle wrapper --gradle-version 8.10.2
+        echo "✅ gradlew 已生成"
+    else
+        echo "❌ 错误: gradlew 不存在且无法生成（gradle 未安装）"
+        exit 1
+    fi
 fi
 
 # 添加执行权限
